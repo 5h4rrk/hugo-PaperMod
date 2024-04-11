@@ -41,3 +41,23 @@
 .button:active {
     transform: scale(0.96);
 }
+
+.main a {
+    background: var(--gap);
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.main a:hover {
+    transform: scale(1.06);
+    color: rgb(27, 171, 171);
+}
+
+.nav a {
+    background: var(--gap);
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: rgb(27, 171, 171);
+}

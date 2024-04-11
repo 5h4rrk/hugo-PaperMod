@@ -1,16 +1,27 @@
 .main {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    max-width: calc(var(--main-width) + var(--gap) * 2);
+    max-width: 70%;
     margin: auto;
     padding: var(--gap);
 }
 
-.page-header h1 {
-    font-size: 40px;
+@media only screen and (max-width: 768px) {
+    .main {
+        position: relative;
+        min-height: calc(100vh - var(--header-height) - var(--footer-height));
+        max-width: calc(var(--main-width) + var(--gap) * 2);
+        margin: auto;
+        padding: var(--gap);
+    }
 }
 
-.pagination {
+.page-header h1 {
+    font-size: 45px;
+    color: #46cdb9;
+}
+
+.pagination {   
     display: flex;
 }
 
@@ -18,7 +29,7 @@
     color: var(--theme);
     font-size: 13px;
     line-height: 36px;
-    background: var(--primary);
+    background: var(--gap);
     border-radius: calc(36px / 2);
     padding: 0 16px;
 }

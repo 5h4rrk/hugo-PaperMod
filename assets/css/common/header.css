@@ -1,13 +1,26 @@
 .nav {
     display: flex;
     flex-wrap: wrap;
+    font-style: italic;
     justify-content: space-between;
-    max-width: calc(var(--nav-width) + var(--gap) * 2);
+    max-width: 70%;
     margin-inline-start: auto;
     margin-inline-end: auto;
     line-height: var(--header-height);
 }
 
+@media only screen and (max-width: 768px) {
+.nav {
+        display: flex;
+        flex-wrap: wrap;
+        font-style: italic;
+        justify-content: space-between;
+        max-width: calc(var(--nav-width) + var(--gap) * 2);
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        line-height: var(--header-height);
+    }
+}
 .nav a {
     display: block;
 }
