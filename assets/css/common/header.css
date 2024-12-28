@@ -1,7 +1,6 @@
 .nav {
     display: flex;
     flex-wrap: wrap;
-    font-style: italic;
     justify-content: space-between;
     max-width: 70%;
     margin-inline-start: auto;
@@ -13,7 +12,6 @@
 .nav {
         display: flex;
         flex-wrap: wrap;
-        font-style: italic;
         justify-content: space-between;
         max-width: calc(var(--nav-width) + var(--gap) * 2);
         margin-inline-start: auto;

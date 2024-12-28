@@ -38,7 +38,6 @@
     position: relative;
     margin-bottom: var(--gap);
     padding: var(--gap);
-    font-style: italic;
     background: var(--gap);
     /* background: var(--entry); */
     border-radius: var(--radius);

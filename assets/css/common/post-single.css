@@ -1,13 +1,11 @@
 .page-header,
 .post-header {
     margin: 24px auto var(--content-gap) auto;
-    font-style: italic;
     color: #0fb896;
 }
 
 .post-title {
     margin-bottom: 2px;
-    font-style: italic;
     color: #0fb896;
     font-size: 40px;
 }
