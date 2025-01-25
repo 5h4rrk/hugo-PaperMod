@@ -17,8 +17,8 @@
 }
 
 .page-header h1 {
-    font-size: 45px;
-    color: #46cdb9;
+    font-size: 50px;
+    color: #ab86c9;
 }
 
 .pagination {   
@@ -27,7 +27,7 @@
 
 .pagination a {
     color: var(--theme);
-    font-size: 13px;
+    font-size: 16px;
     line-height: 36px;
     background: var(--gap);
     border-radius: calc(36px / 2);
@@ -45,8 +45,8 @@
 }
 
 .social-icons a svg {
-    height: 26px;
-    width: 26px;
+    height: 16px;
+    width: 16px;
 }
 
 code {
@@ -63,8 +63,8 @@ pre {
     position: absolute;
     top: 4px;
     right: 4px;
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(78, 78, 78, 0.8);
+    color: rgba(255, 255, 255, 1.0);
+    background: rgba(59, 59, 59, 0.8);
     border-radius: var(--radius);
     padding: 0 5px;
     font-size: 14px;

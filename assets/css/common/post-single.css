@@ -1,19 +1,19 @@
 .page-header,
 .post-header {
     margin: 24px auto var(--content-gap) auto;
-    color: #0fb896;
+    color: #cba6f7;
 }
 
 .post-title {
     margin-bottom: 2px;
-    color: #0fb896;
+    color: #cba6f7;
     font-size: 40px;
 }
 
 .post-description {
     margin-top: 10px;
     margin-bottom: 5px;
-    color: #0fb896;
+    color:#cba6f7;
 }
 
 .post-meta,
@@ -49,38 +49,48 @@
 
 .post-content h1 {
     margin: 40px auto 32px;
-    color: #25a695;
+    color: #e47b93dc; /* Lighter shade */
     font-size: 40px;
 }
 
 .post-content h2 {
     margin: 32px auto 24px;
-    color: #25a695;
+    color: #e47b93dc; /* Lighter shade */
     font-size: 32px;
 }
 
 .post-content h3 {
     font-size: 24px;
-    color: #25a695;
-    
+    color: #e47b93dc; /* Lighter shade */
 }
 
 .post-content h4 {
     font-size: 16px;
-    color: #25a695;
-    
+    color: #e47b93dc; /* Lighter shade */
 }
 
 .post-content h5 {
     font-size: 14px;
-    color: #25a695;
-    
+    color: #e47b93dc; /* Lighter shade */
 }
 
 .post-content h6 {
     font-size: 12px;
-    color: #25a695;
+    color: #e47b93dc; /* Lighter shade */
 }
+
+
+.post-content h1:hover,
+.post-content h2:hover,
+.post-content h3:hover,
+.post-content h4:hover,
+.post-content h5:hover,
+.post-content h6:hover {
+    transform: translateY(-5px) translateX(-5px) scale(1.1); 
+    transition: transform 0.7s ease; 
+}
+
+
 
 .post-content a,
 .toc a:hover {
@@ -205,30 +215,32 @@
     margin-bottom: 0;
 }
 
+/* Base code styling */
 .post-content code {
     margin: auto 4px;
     padding: 4px 6px;
     font-size: 0.78em;
     font-style: normal;
     line-height: 1.4;
-    color: rgb(167, 186, 186);
-    /* background: var(--gap); */
-    background: #1d1e20e2;
+    color: #eeeaead8; /* White text color */
+    background: #1f1d2b; /* Darker background */
     border-radius: 10px;
+    font-family: 'Fira Code', monospace; /* Monospace font for code */
 }
 
+/* Code blocks styling */
 .post-content pre code {
     display: grid;
     margin: auto 0;
     padding: 10px;
-    color: rgb(213, 213, 214);
-    /* background: var(--code-block-bg) !important; */
-    background: #1d1e20e2 !important;
-    /* background: var(--gap); */
-    border-radius: var(--radius);
+    color: #eeeaead8; /* White text color */
+    background: #1f1d2b; /* Darker background */
+    border-radius: 8px;
     overflow-x: auto;
     word-break: break-all;
+    font-family: 'Fira Code', monospace; /* Monospace font for code */
 }
+
 
 .post-content blockquote {
     margin: 20px 0;

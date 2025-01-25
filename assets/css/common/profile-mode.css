@@ -18,8 +18,33 @@
 }
 
 .profile img {
-    border-radius: 50%;
+    border-radius: 50%; /* Keeps the image circular */
+    animation: rotateImage 6s linear infinite, breathing 3s ease-in-out infinite; /* Only breathing and rotation */
+    position: relative; /* Needed for positioning */
 }
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg); /* Starts at 0 degrees */
+    }
+    100% {
+        transform: rotate(360deg); /* Completes the full rotation */
+    }
+}
+
+/* Breathing effect */
+@keyframes breathing {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.1); /* Expands the image */
+    }
+    100% {
+        transform: scale(1); /* Returns to normal size */
+    }
+}
+
 
 .buttons {
     flex-wrap: wrap;
@@ -50,7 +75,7 @@
 
 .main a:hover {
     transform: scale(1.06);
-    color: rgb(27, 171, 171);
+    color: #cba6f7;
 }
 
 .nav a {
@@ -59,5 +84,5 @@
 }
 
 .nav a:hover {
-    color: rgb(27, 171, 171);
+    color:#cba6f7;
 }
