@@ -1,7 +1,7 @@
 .main {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    max-width: 70%;
+    max-width: 67%;
     margin: auto;
     padding: var(--gap);
 }
@@ -26,8 +26,9 @@
 }
 
 .pagination a {
-    color: var(--theme);
-    font-size: 16px;
+    color: #fbeaf4;
+    font-size: 20px;
+    font-weight: bolder;
     line-height: 36px;
     background: var(--gap);
     border-radius: calc(36px / 2);

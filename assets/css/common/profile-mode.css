@@ -19,7 +19,7 @@
 
 .profile img {
     border-radius: 50%; /* Keeps the image circular */
-    animation: rotateImage 6s linear infinite, breathing 3s ease-in-out infinite; /* Only breathing and rotation */
+    animation: rotateImage 6s linear infinite, neonGlow 3s ease-in-out infinite; /* Only breathing and rotation */
     position: relative; /* Needed for positioning */
 }
 
@@ -32,18 +32,21 @@
     }
 }
 
-/* Breathing effect */
-@keyframes breathing {
+@keyframes neonGlow {
     0% {
-        transform: scale(1); /* Normal size */
+      box-shadow: 0 0 4px #cba6f7, 0 0 8px #cba6f7;
+      text-shadow: 0 0 2px #cba6f7;
     }
     50% {
-        transform: scale(1.1); /* Expands the image */
+      box-shadow: 0 0 8px #cba6f7, 0 0 16px #cba6f7;
+      text-shadow: 0 0 4px #cba6f7;
     }
     100% {
-        transform: scale(1); /* Returns to normal size */
+      box-shadow: 0 0 4px #cba6f7, 0 0 8px #cba6f7;
+      text-shadow: 0 0 2px #cba6f7;
     }
-}
+  }
+  
 
 
 .buttons {
@@ -52,12 +55,32 @@
 }
 
 .button {
-    background: var(--tertiary);
-    border-radius: var(--radius);
-    margin: 8px;
-    padding: 6px;
-    transition: transform 0.1s;
+    background: #1e1e2e;               /* Catppuccin Mocha base */
+    color: #e9e1f4;                    /* Lavender text */
+    font-size: 16px;
+    padding: 12px 24px;
+    margin: 12px;
+    border-radius: 12px;
+    border: 1px solid #a995d3;         /* Dimmed lavender */
+    text-shadow: 0 0 2px #a995d3;
+    box-shadow:
+        0 0 3px #a995d3,
+        0 0 6px #a995d3,
+        0 0 10px #a995d3;
+    background-color: #11111a;         /* Your original base */
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
 }
+
+.button:hover {
+    transform: scale(1.03);
+    box-shadow:
+        0 0 4px #a995d3,
+        0 0 8px #a995d3,
+        0 0 12px #a995d3;
+}
+
+
 
 .button-inner {
     padding: 0 8px;
